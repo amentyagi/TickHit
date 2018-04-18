@@ -94,10 +94,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <include layout="@layout/genre_category"/>
-
 
                 </HorizontalScrollView>
+
+                <include
+                    layout="@layout/genre_category"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"/>
 
             </RelativeLayout>
 
