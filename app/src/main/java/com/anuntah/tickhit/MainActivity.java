@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_movie);
+        setContentView(R.layout.fragment_movie  );
 
         /*mSlideViewPager = findViewById(R.id.slideViewPages);
         mDotsLayout = findViewById(R.id.dotsLayout);

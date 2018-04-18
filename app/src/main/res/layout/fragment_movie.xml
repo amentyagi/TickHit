@@ -42,7 +42,7 @@
                     android:layout_height="wrap_content"
                     android:text="See All"
                     android:layout_alignParentEnd="true"
-                    android:textColor="@android:color/holo_blue_light"
+                    android:textColor="@color/colorAccent"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                     android:textStyle="bold"
                     android:padding="10dp"/>
@@ -87,7 +87,7 @@
                     android:padding="10dp"
                     android:text="See All"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-                    android:textColor="@android:color/holo_blue_light"
+                    android:textColor="@color/colorAccent"
                     android:textStyle="bold" />
 
                 <HorizontalScrollView
@@ -103,6 +103,87 @@
                     android:layout_alignParentTop="true"
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/popular_card"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="@dimen/cardview_default_elevation">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/popular_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Popular"
+                    android:textColor="#717171"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold"
+                    android:padding="10dp"/>
+                <TextView
+                    android:id="@+id/see_all_popular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See All"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/colorAccent"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold"
+                    android:padding="10dp"/>
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/top_rated_card"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="@dimen/cardview_default_elevation">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/topRated_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Top Rated"
+                    android:textColor="#717171"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold"
+                    android:padding="10dp"/>
+                <TextView
+                    android:id="@+id/see_all_top_rated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See All"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/colorAccent"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold"
+                    android:padding="10dp"/>
+
+
 
             </RelativeLayout>
 
