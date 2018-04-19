@@ -1,54 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     android:background="@color/mainBG">
 
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="5dp">
 
-    <ImageView
-        android:id="@+id/user_photo"
-        android:layout_margin="10dp"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:src="@drawable/user_icon"/>
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/user_photo"
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:layout_margin="10dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/user_icon_purple"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/username_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="90dp"
+                android:text="Amen Tyagi "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
 
     <TextView
-        android:id="@+id/username_text"
+        android:id="@+id/recent_history_tag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/recent_history_list"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="20dp"
-        android:text="Bhavit Yadav"
+        android:layout_marginBottom="-48dp"
+        android:layout_marginLeft="15dp"
+        android:text="Recent History"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
         android:textColor="@color/textColor"
         android:textStyle="bold" />
 
     <android.support.v7.widget.CardView
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="@dimen/cardview_default_elevation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></HorizontalScrollView>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
         android:id="@+id/favrourite_movies"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/colorWhite"
         app:cardCornerRadius="5dp"
-        app:cardElevation="@dimen/cardview_default_elevation"
-        app:cardBackgroundColor="@color/colorWhite">
+        app:cardElevation="@dimen/cardview_default_elevation">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="15dp">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:padding="10dp"
                 android:text="Favourite Movies"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                android:textColor="@color/textColor"
-                android:padding="10dp"/>
+                android:textColor="@color/textColor" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -56,9 +110,9 @@
                 android:text="See All"
                 android:textColor="@color/colorAccent"
                 android:textStyle="bold"
+                tools:ignore="MissingConstraints"
                 tools:layout_editor_absoluteX="351dp"
-                tools:layout_editor_absoluteY="16dp"
-                tools:ignore="MissingConstraints" />
+                tools:layout_editor_absoluteY="16dp" />
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
@@ -138,26 +192,27 @@
         android:id="@+id/favrourite_actors"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_below="@+id/favrourite_movies"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
-        android:layout_below="@+id/favrourite_movies"
-        app:cardElevation="@dimen/cardview_default_elevation"
+        android:layout_marginTop="10dp"
         app:cardBackgroundColor="@color/colorWhite"
         app:cardCornerRadius="5dp"
+        app:cardElevation="@dimen/cardview_default_elevation"
         tools:ignore="UnknownId">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="15dp">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:padding="10dp"
                 android:text="Favourite Actors"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                android:textColor="@color/textColor"
-                android:padding="10dp"/>
+                android:textColor="@color/textColor" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -165,15 +220,15 @@
                 android:text="See All"
                 android:textColor="@color/colorAccent"
                 android:textStyle="bold"
+                tools:ignore="MissingConstraints"
                 tools:layout_editor_absoluteX="351dp"
-                tools:layout_editor_absoluteY="16dp"
-                tools:ignore="MissingConstraints" />
+                tools:layout_editor_absoluteY="16dp" />
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="141dp"
-                tools:layout_editor_absoluteY="9dp"
-                tools:ignore="MissingConstraints">
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="9dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -243,30 +298,28 @@
 
     </android.support.v7.widget.CardView>
 
-    <TextView
-        android:id="@+id/recent_history_tag"
-        android:layout_width="wrap_content"
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/recent_history_list"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="-48dp"
-        android:text="Recent History"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-        android:layout_marginLeft="15dp"
-        android:textColor="@color/textColor"
-        android:textStyle="bold" />
-
-    <ListView
-        android:id="@+id/recent_history_list"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/favrourite_actors"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="10dp"
+        app:cardElevation="@dimen/cardview_default_elevation"
+        app:cardCornerRadius="5dp"
         android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:background="@color/colorWhite"
-        tools:ignore="UnknownId">
+        android:layout_marginRight="5dp">
 
-    </ListView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recently Viewed"
+            android:layout_margin="10dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
 
-</RelativeLayout>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp">
+
+        </HorizontalScrollView>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

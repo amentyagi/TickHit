@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/colorPrimary">
+    android:background="@color/colorWhite">
     <ImageView
         android:id="@+id/movie_thumbnail"
         android:layout_width="80dp"
@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Rio 2"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/textColor"
         android:textStyle="bold"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
         android:layout_toEndOf="@+id/movie_thumbnail"
@@ -30,7 +30,7 @@
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
         android:layout_toEndOf="@+id/movie_thumbnail"
         android:layout_below="@+id/movie_name"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/textColor"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="3dp"/>
     <TextView
@@ -43,7 +43,7 @@
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
         android:layout_toEndOf="@+id/movie_thumbnail"
         android:layout_below="@+id/movie_genre"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/textColor"
         android:layout_marginLeft="10dp"/>
     <ImageView
         android:id="@+id/movie_rating_icon"
@@ -69,7 +69,7 @@
         android:layout_toRightOf="@+id/movie_rating_icon"
         android:text="Animation, Comedy"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/textColor"
         android:textStyle="bold"
         android:layout_alignBaseline="@+id/movie_rating_icon"
         tools:text="7"
