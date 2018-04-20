@@ -34,7 +34,7 @@
                 />
 
 
-            <ImageView
+            <com.google.android.youtube.player.YouTubeThumbnailView
                 android:id="@+id/trailer_placeholder"
                 android:layout_width="match_parent"
                 android:scaleType="fitCenter"
@@ -98,6 +98,14 @@
                 android:textStyle="bold"
                 app:layout_constraintTop_toBottomOf="@id/movie_name"
                 app:layout_constraintStart_toEndOf="@+id/release_year" />
+
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/share"
+                tools:layout_editor_absoluteX="371dp"
+                tools:layout_editor_absoluteY="201dp" />
 
 
         </android.support.constraint.ConstraintLayout>

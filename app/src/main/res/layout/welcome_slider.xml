@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
 
     <android.support.v4.view.ViewPager
         android:id="@+id/slideViewPages"
         android:layout_width="match_parent"
         android:layout_height="561dp"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:background="@color/mainBG">
+        android:layout_alignParentTop="true">
 
     </android.support.v4.view.ViewPager>
 
@@ -23,6 +23,8 @@
         android:padding="20dp">
 
     </LinearLayout>
+
+
 
 
 </RelativeLayout>

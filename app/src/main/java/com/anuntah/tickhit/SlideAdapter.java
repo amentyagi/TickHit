@@ -9,8 +9,6 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.anuntah.tickhit.R;
-
 public class SlideAdapter extends PagerAdapter {
 
     Context context;
@@ -24,9 +22,9 @@ public class SlideAdapter extends PagerAdapter {
     //array
     public int[] slide_image = {
 
-            /*R.drawable.ic_movie_white_48dp,
-            R.drawable.ic_tv_white_48dp,
-            R.drawable.ic_person_white_48dp*/
+            R.drawable.movie_icon_slider,
+            R.drawable.tv_ic_slider,
+            R.drawable.user_icon_slider
 
     };
 

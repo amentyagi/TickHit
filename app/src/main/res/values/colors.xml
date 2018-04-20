@@ -8,5 +8,6 @@
     <color name="textColor">#4A4849</color>
     <color name="colorGold">#ffbf00</color>
     <color name="colorBlue">#54B0F3</color>
+    <color name="cyan">#699</color>
     <color name="colorWhiteTransparent">#80ffffff</color>
 </resources>
